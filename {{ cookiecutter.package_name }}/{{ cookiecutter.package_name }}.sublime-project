@@ -1,0 +1,32 @@
+{
+    "folders":
+    [
+        {
+            "path": "."
+        }
+    ],
+    "settings":
+    {
+        "python_interpreter": "./venv/bin/python",
+        "LSP":
+        {
+            "LSP-pylsp":
+            {
+                "enabled": true,
+                "selector": "source.python",
+                "command": [
+                    "./venv/bin/pylsp",
+                ],
+                "settings":
+                {
+                    "pylsp.plugins.jedi.environment": "./venv",
+                    "pylsp.plugins.pycodestyle.enabled": false,
+                    "pylsp.plugins.pyflakes.enabled": false,
+                    "pylsp.configurationSources": ["flake8"],
+                    "pylsp.plugins.flake8.enabled": true,
+                    "pylsp.plugins.mypy_ls.enabled": true,
+                }
+            }
+        }
+    }
+}
