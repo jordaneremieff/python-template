@@ -9,6 +9,6 @@
   "matrix_versions": "3.7, 3.8, 3.9",
   "github_username": "",
   "github_repo": "{{ cookiecutter['github_username'] }}/{{ cookiecutter['package_name'] }}",
-  "include_sublime_project": 1,
-  "init_repo": ["none", "public", "private"]
+  "include_sublime_project": ["yes", "no"],
+  "create_github_repo": ["none", "public", "private"]
 }
