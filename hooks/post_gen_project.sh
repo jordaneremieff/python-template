@@ -16,7 +16,12 @@ poetry add \
 -D mkautodoc \
 -D pygments \
 -D pymdown-extensions \
--D rich
+-D rich \
+-D python-lsp-server \
+-D mypy-ls \
+-D pyls-flake8
+
+
 
 {% if cookiecutter.init_repo in ["public", "private"] %}
 git init
